@@ -12,11 +12,10 @@ https://docs.djangoproject.com/en/1.8/howto/deployment/wsgi/
 """
 import os
 import sys
-import site
 
-janeway_path = '/path/to/installation'
+janeway_path = '/path/to/installation' # This is the directory where you cloned janeway (ie. "/Users/me/Projects/janeway")
 virtualenv_path = '/path/to/your/virtualenv/name'
-virtualenv_python_verison = 3.6
+virtualenv_python_verison = 3.6 # two digits only (ie. if python3 -V says "Python 3.5.7", this would be 3.5)
 
 # add the project path into the sys.path:
 sys.path.append(os.path.join(janeway_path, 'src'))
